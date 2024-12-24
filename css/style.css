@@ -1,0 +1,376 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: "Roboto", serif !important;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 16px;
+    color: #364d59 !important;
+    line-height: 1.7;
+}
+.site-navbar{
+    padding: 1rem;
+    background: #fee2b3;
+}
+.site-navbar li a{
+    margin-left: 15px;
+    margin-right: 15px;
+    padding: 1rem 0px !important;
+    color: rgba(0, 0, 0, 0.7);
+}
+.site-navbar li a:hover{
+     color: rgba(0, 0, 0);
+}
+.site-navbar li.active a{
+    color: #000 !important;
+}
+.logo strong{
+    font-weight: 900;
+    font-size: 1.7rem;
+}
+.logo a{
+    color: #000;
+    text-decoration: none;
+}
+.logo a:hover{
+    color: #000;
+    text-decoration: none;
+}
+.dropdown-menu{
+    border: none !important;
+    border-radius: 0px !important;
+    margin: 0 !important;
+    padding: 0 !important;
+}
+.dropdown-menu a{
+    padding: 1.3rem !important;
+    margin: 0!important;
+}
+.dropdown-menu a:hover{
+    padding: 1.3rem !important;
+    margin: 0!important;
+}
+.container{
+    max-width: 1140px !important;
+}
+.banner_bg{
+    background: linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.2)), url('../images/hero_bg_1.jpg') center no-repeat;
+    background-size: cover;
+    display: flex;
+    align-items: start;
+    max-width: 100%;
+    height: 100vh; 
+    min-height: 770px;
+    position: relative;
+    padding: 200px 0px;
+}
+.banner-text p{
+    color: #fff;
+    margin-bottom: 16px;
+    line-height: 1.7;
+    margin-bottom: 1rem;
+}
+.banner-text h2{
+    color: #fff !important;
+    margin-bottom: 8px;
+    font-family: "Playfair Display", serif;
+    font-size: 50px;
+    margin-bottom: 0.5rem;
+}
+form{
+    background: #fff;
+    border-radius: 7px;
+    padding: 40px;
+    color: #495057 !important;
+}
+form h5{
+    font-family: "Playfair Display", serif;
+    color: #364d59;
+    font-size: 20px;
+    font-weight: 300;
+    margin-bottom: 20px;
+}
+.form-control{
+    height: 55px !important;
+}
+input{
+    width: 100% !important;
+    padding: 6px 20px !important;
+    margin-bottom: 24px !important;
+}
+input:active{
+    border: #fee2b3 !important;
+}
+.btn-primary{
+    font-size: 16px !important;
+    width: 100% !important;
+    padding: 16px 25px !important;
+    background: #fee2b3 !important;
+    border: 1px solid #fee2b3 !important;
+    color: #212529 !important;
+}
+button:hover{
+    color: #212529 !important;
+    background-color: #fed48d !important;
+    border-color: #fdcf81 !important;
+    text-decoration: none;
+}
+.form-control:focus{
+    border: 1px solid #000 !important;
+    box-shadow: none !important;
+}
+.col-lg-12{
+    position: relative;
+    width: 100%;
+    padding: 0 15px;
+}
+.datepicker{
+    padding: 10px !important;
+    border: 1px solid #d2d2d2 !important;
+}
+.form-group{
+    position: relative;
+}
+form span{
+    position: absolute;
+    right: 30px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #e3e3e3;
+}
+h2{
+    font-family: "Playfair Display", serif;
+    font-size: 32px;
+    color: #364d59 !important;
+    font-weight: 300 !important;
+}
+p{
+    font-family: "Roboto", serif !important;
+    line-height: 1.7 !important;
+    font-weight: 300;
+}
+.practice p{
+    color: #999;
+    font-size: 14px;
+}
+strong{
+    font-weight: 700 !important;
+}
+.card-group{
+    gap: 30px;
+}
+.card{
+    position: relative;
+    padding: 40px !important;
+    box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.1);
+    border: none !important;
+    border-radius: 0px !important;
+    box-sizing: border-box !important;
+}
+.card-body{
+    padding: 0 !important;
+}
+.icon {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    z-index: 1;
+    width: 50px;
+    height: 85px;
+    position: relative;
+}
+.icon::before {
+    content: "";
+    background: #fee2b3;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    z-index: -1;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 0;
+
+}
+.icon i{
+    font-size: 40px !important;
+    color: #495057;
+}
+.card-title{
+    font-size: 20px;
+    font-family: "Playfair Display", serif;
+    color: #000;
+}
+.card-body p{
+    font-size: 14px;
+    color: #999;
+    line-height: 1.7 !important;
+}
+.appointment{
+    gap:30px;
+}
+.py-5{
+    padding-top: 5rem !important;
+    padding-bottom: 5rem !important;
+}
+h3{
+    font-size: 28px;
+    font-family: "Playfair Display", serif;
+    color: #364d59;
+    font-weight: 300;
+}
+.appointment-sec{
+    padding: 0 15px;
+}
+.appointment-txt{
+    font-family: "Roboto", serif !important;
+    line-height: 1.7 !important;
+    font-weight: 400 !important;
+}
+.happy h2{
+    color: #364d59 !important;
+}
+.profile{
+    margin-bottom: 1.5rem;
+}
+.profile img{
+    width: 50px;
+    height: 50px;
+    border-radius: 50px;
+}
+.profile-img{
+    padding-right: 15px;
+}
+.author .name{
+    font-size: 16px;
+    color: #364d59 !important;
+    font-weight: 300;
+    line-height: 0.7;
+}
+.author .position{
+    font-size: 16px;
+    color: #ccc !important;
+    font-weight: 300;
+    line-height: 0.7;
+}
+.testimonials{
+    font-size: 18px !important;
+    color: #364d59 !important;
+    margin-bottom: 16px !important;
+    font-weight: 400 !important;
+}
+.happy .card{
+    padding: 30px !important;
+    border-radius: 7px !important;
+    background: #fff;
+}
+.solution{
+    background: #fff;
+}
+.soln-img{
+    padding: 0 15px 0 0;
+}
+.soln-text, .soln-accord{
+    padding: 0 15px;
+}
+.soln-text p{
+    font-weight: 400 !important;
+}
+.soln-text ul{
+    list-style-type: none;
+    font-weight: 400 !important;
+    margin: 0;
+    padding: 0;
+}
+.soln-text li{
+    margin-bottom: 10px;
+}
+.soln-text li::before{
+    content: url('/images/check-lg.svg');
+    padding-right: 15px;
+}
+.accordion-body{
+    background: #f8f9fa;
+    color: #888;
+}
+.accordion-body p{
+    font-weight: 400 !important;
+}
+.accordion-button{
+    background: #fff !important;
+    color: #999 !important;
+    border-color: #efefef;
+}
+.accordion-button:active{
+    color: #000 !important;
+}
+.accordion-button:focus{
+    border: 1px solid #efefef !important;
+    box-shadow: none !important;
+    color: #000 !important;
+}
+.accordion-button:hover{
+    color: #000 !important;
+    background: #fff !important; 
+}
+.footer-bg{
+    background: url('/images/hero_bg_footer.jpg');
+    background-position: center;
+    background-size: cover;
+}
+footer{
+    padding: 8rem 0;
+}
+.footer-text{
+    margin-bottom: 6rem;
+}
+h6{
+    font-size: 16px;
+    font-family: "Playfair Display", serif;
+    color: #fff;
+    font-weight: 300;
+    margin-bottom: 24px;
+}
+footer p{
+    font-size: 16px;
+    font-family: "Roboto", serif !important;
+    color: #fff;
+    font-weight: 400;
+    margin-bottom: 16px;
+}
+footer ul{
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+footer li{
+    font-size: 16px;
+    font-family: "Roboto", serif !important;
+    color: rgba(255, 255, 255, 0.5);
+    font-weight: 400;
+    margin-bottom: 10px;
+}
+.copyright{
+    text-align: center;
+    border-top: 1px solid rgba(255, 255, 255, 0.1) ;
+    padding-top: 48px;
+}
+.f-icon{
+    display: flex;
+    gap: 3px;
+}
+.f-icon i{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #fee2b3;
+    border-radius: 50%;
+    color: #fff;
+    width: 40px;
+    height: 40px;
+}
