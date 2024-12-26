@@ -18,13 +18,13 @@ body{
     background: #fee2b3;
 }
 .site-navbar li a{
-    margin-left: 15px;
-    margin-right: 15px;
+    margin-left: 15px !important;
+    margin-right: 15px !important;
     padding: 1rem 0px !important;
     color: rgba(0, 0, 0, 0.7);
 }
 .site-navbar li a:hover{
-     color: rgba(0, 0, 0);
+    color: rgba(0, 0, 0);
 }
 .site-navbar li.active a{
     color: #000 !important;
@@ -47,13 +47,15 @@ body{
     margin: 0 !important;
     padding: 0 !important;
 }
-.dropdown-menu a{
-    padding: 1.3rem !important;
-    margin: 0!important;
+.dropdown-menu .dropdown-item {
+    margin-left: 15px !important;
+    margin-right: 15px !important;
+    padding: 1rem 0 !important;
+    color: rgba(0, 0, 0, 0.7);
 }
-.dropdown-menu a:hover{
-    padding: 1.3rem !important;
-    margin: 0!important;
+.dropdown-menu .dropdown-item:hover {
+    background: none !important;
+    color: rgba(0, 0, 0);
 }
 .container{
     max-width: 1140px !important;
@@ -304,7 +306,9 @@ h3{
 .accordion-button{
     background: #fff !important;
     color: #999 !important;
-    border-color: #efefef;
+    border-color: #efefef;    
+    padding: 10px 16px !important;
+    border-radius: 0;
 }
 .accordion-button:active{
     color: #000 !important;
@@ -317,6 +321,21 @@ h3{
 .accordion-button:hover{
     color: #000 !important;
     background: #fff !important; 
+    border: none !important;
+}
+.accordion-button::after{
+    display: none !important;
+}
+.accordion-item{
+    margin-bottom: 10px !important; 
+    border: 1px solid #efefef !important;
+    border-radius: 4px !important;
+}
+.accordion-item .accordion-button {
+    border-radius: 4px !important; /* Fully rounded buttons */
+}
+.accordion-button:not(.collapsed){
+    color: #000 !important;
 }
 .footer-bg{
     background: url('/images/hero_bg_footer.jpg');
@@ -373,4 +392,7 @@ footer li{
     color: #fff;
     width: 40px;
     height: 40px;
+}
+.btn-left{
+    width: 65% !important;
 }
